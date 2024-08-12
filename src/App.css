@@ -1,0 +1,316 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e0f4e1; /* Light green background */
+  color: #333; /* Dark text color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #005b41; /* Darker green for headings */
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: #004d40; /* Deep Teal for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar.css */
+nav {
+  background-color: #005b41; /* Darker green */
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #004d40; /* Deep Teal for hover effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home.css */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background: linear-gradient(to right, #e0f4e1, #c1e3b1); /* Light green gradient */
+  color: #333;
+  text-align: left;
+  padding: 0 30px;
+}
+
+
+
+
+
+
+
+
+/* Projects.css */
+#projects {
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+#projects .project-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+  transition: transform 0.2s;
+}
+
+#projects .project-card:hover {
+  transform: translateY(-5px);
+}
+
+#projects h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #005b41; /* Darker green */
+}
+
+#projects p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#projects a {
+  color: #004d40; /* Deep Teal for links */
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Skills.css */
+#skills {
+  background-color: #fff;
+  text-align: left; /* Align the text to the left */
+  padding: 50px 20px; /* Padding for better spacing */
+  margin-left: 20px; /* Add margin to the left to indent the entire section */
+  margin-right: 20px; /* Optional: Add margin to the right for symmetry */
+}
+
+#skills .skill {
+  margin: 20px 0;
+  text-align: left;
+  max-width: 500px;
+  margin-left: 0; /* Remove automatic horizontal margin */
+  margin-right: 0; /* Remove automatic horizontal margin */
+}
+
+#skills .skill p {
+  font-weight: bold;
+  color: #005b41; /* Darker green for skill names */
+}
+
+#skills .progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#skills .progress {
+  background-color: #004d40; /* Deep Teal for progress */
+  height: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Contact.css */
+#contact {
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact form div {
+  margin-bottom: 15px;
+}
+
+#contact form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #005b41; /* Darker green for labels */
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact form button {
+  padding: 10px 20px;
+  background-color: #004d40; /* Deep Teal for button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #00332d; /* Slightly darker Deep Teal for hover effect */
+}
+
+
+
+
+
+
+
+
+
+/* App.css */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  #home {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  #projects .project-card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* About.css */
+#about {
+  background-color: #fff;
+  text-align: left; /* Align the text to the left */
+  padding: 50px 20px;
+}
+
+#about h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #005b41; /* Darker green */
+}
+
+#about p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
