@@ -4,21 +4,21 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 60px 20px; /* More padding for a spacious feel */
-    background-color: #fafafa; /* Very light grey background for a clean look */
+    padding: 60px 20px; 
+    background-color: #fafafa; /
   }
   
   .intro-text {
     max-width: 800px;
-    margin-bottom: 30px; /* More space below the text */
+    margin-bottom: 30px; 
   }
   
   .intro-text h2 {
-    font-size: 38px; /* Slightly larger heading for impact */
-    font-family: 'Montserrat', sans-serif; /* Elegant, modern font */
-    color: #004d40; /* Deep teal color for emphasis */
+    font-size: 28px; /* Slightly larger heading */
+    font-family: 'Montserrat', sans-serif; 
+    color: #004d40; 
     margin-bottom: 15px;
-    font-weight: 700; /* Bold for better visibility */
+    font-weight: 600; /* Bold for better visibility */
   }
   
   .intro-text p {
@@ -66,6 +66,6 @@
   }
   
   .connect-button:focus {
-    outline: none; /* Remove default focus outline */
+    outline: none; 
   }
   
