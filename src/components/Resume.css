@@ -1,0 +1,71 @@
+#resume {
+    background-color: #f4f4f9; /* Light background for the section */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#resume h2 {
+    font-size: 34px;
+    color: #004d40; /* Deep Teal */
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.resume-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.resume-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #004d40;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.resume-link:hover {
+    background-color: #00332d;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.education, .skills, .projects {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.education h3, .skills h3, .projects h3 {
+    font-size: 28px;
+    color: #004d40;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.education ul, .skills ul, .projects ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.education li, .skills li, .projects li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #333;
+    line-height: 1.8;
+}

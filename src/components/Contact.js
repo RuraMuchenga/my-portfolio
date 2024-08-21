@@ -1,52 +1,47 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './Contact.css'; 
+import twitterIcon from './images/twitter-icon.png';
+import githubIcon from './images/github-icon.png';
+import linkedinIcon from './images/linkedin-icon.png';
+import emailIcon from './images/email-icon.png';
 
-function Contact() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Add form validation and submission logic here
-        console.log('Form submitted:', { name, email, message });
-    };
-
+const Contact = () => {
     return (
-        <section id="contact">
-            <div className="container">
-                <h2>Contact Me</h2>
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        <label>Name:</label>
-                        <input 
-                            type="text" 
-                            value={name} 
-                            onChange={(e) => setName(e.target.value)} 
-                            required 
-                        />
-                    </div>
-                    <div>
-                        <label>Email:</label>
-                        <input 
-                            type="email" 
-                            value={email} 
-                            onChange={(e) => setEmail(e.target.value)} 
-                            required 
-                        />
-                    </div>
-                    <div>
-                        <label>Message:</label>
-                        <textarea 
-                            value={message} 
-                            onChange={(e) => setMessage(e.target.value)} 
-                            required 
-                        ></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
+        <div id="contact">
+            <h2>Lets chat!</h2>
+            <form>
+                <div>
+                    <input type="text" id="name" name="name" placeholder=" " required />
+                    <label htmlFor="name">Name</label>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder=" " required />
+                    <label htmlFor="email">Email</label>
+                </div>
+                <div>
+                    <textarea id="message" name="message" placeholder=" " required></textarea>
+                    <label htmlFor="message">Message</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="social-links">
+                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <img src={twitterIcon} alt="Twitter" /> Twitter
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <img src={githubIcon} alt="GitHub" /> GitHub
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedinIcon} alt="LinkedIn" /> LinkedIn
+                </a>
+                <a href="mailto:youremail@example.com">
+                    <img src={emailIcon} alt="Email" /> Email
+                </a>
             </div>
-        </section>
+        </div>
     );
-}
+};
 
 export default Contact;
+
