@@ -206,7 +206,7 @@ nav ul li a:hover {
 }
 
 .connect-button:hover {
-  background: #00796b;
+  background:  #171a19;
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   filter: brightness(1.1);
