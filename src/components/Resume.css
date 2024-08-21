@@ -6,7 +6,7 @@
 
 #resume h2 {
     font-size: 34px;
-    color: #004d40; /* Deep Teal */
+    color: #171a19; /* Deep Teal */
     margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -26,7 +26,7 @@
 .resume-link {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #004d40;
+    background-color: #171a19;
     color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
@@ -37,7 +37,7 @@
 }
 
 .resume-link:hover {
-    background-color: #00332d;
+    background-color: #171a19;
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -51,7 +51,7 @@
 
 .education h3, .skills h3, .projects h3 {
     font-size: 28px;
-    color: #004d40;
+    color: #171a19;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -66,6 +66,6 @@
 .education li, .skills li, .projects li {
     font-size: 18px;
     margin-bottom: 12px;
-    color: #333;
+    color: #555;
     line-height: 1.8;
 }
