@@ -139,14 +139,29 @@ nav ul li a:hover {
   animation: fadeIn 2s ease-in-out 0.5s;
 }
 
+/* Profile Picture Container */
+.profile-pic-container {
+  display: flex;
+  justify-content: center; /* Center-aligns the profile picture */
+  padding: 20px; /* Adds some spacing around the profile picture */
+}
+
 /* Profile Picture Styling */
 .profile-pic-container img {
-  max-width: 250px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: float 3s ease-in-out infinite;
+  max-width: 250px; /* Default size for larger screens */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Keeps the circular shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  animation: float 3s ease-in-out infinite; /* Floating animation */
 }
+
+/* Hide profile picture on small screens */
+@media (max-width: 768px) {
+  .profile-pic-container img {
+    display: none; /* Hides the image on smaller screens */
+  }
+}
+
 
 /* Button Styling */
 .connect-button {
