@@ -26,16 +26,16 @@ const Contact = () => {
             </form>
 
             <div id="social-links">
-                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/_ruraaa" target="_blank" rel="noopener noreferrer">
                     <img src={twitterIcon} alt="Twitter" /> Twitter
                 </a>
-                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/RuraMuchenga" target="_blank" rel="noopener noreferrer">
                     <img src={githubIcon} alt="GitHub" /> GitHub
                 </a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/ruramai-muchenga-a20454165/" target="_blank" rel="noopener noreferrer">
                     <img src={linkedinIcon} alt="LinkedIn" /> LinkedIn
                 </a>
-                <a href="mailto:youremail@example.com">
+                <a href="ruramaimuchenga@gmail.com">
                     <img src={emailIcon} alt="Email" /> Email
                 </a>
             </div>

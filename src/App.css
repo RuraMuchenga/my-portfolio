@@ -145,7 +145,7 @@ nav ul li a:hover {
 
 /* Profile Picture Styling */
 .profile-pic-container img {
-  max-width: 150px;
+  max-width: 250px;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
