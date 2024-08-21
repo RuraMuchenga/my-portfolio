@@ -50,6 +50,12 @@ nav {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 2px -2px gray;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Navbar when scrolling */
+.nav-faded {
+  background-color: rgba(23, 26, 25, 0.7); /* Faint color for the background */
 }
 
 nav .container {
@@ -87,6 +93,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #a0d3c0; /* Optional: light teal color for hover effect */
 }
+
 
 
 
@@ -142,17 +149,17 @@ nav ul li a:hover {
 /* Profile Picture Container */
 .profile-pic-container {
   display: flex;
-  justify-content: center; /* Center-aligns the profile picture */
-  padding: 20px; /* Adds some spacing around the profile picture */
+  justify-content: center; 
+  padding: 20px; 
 }
 
 /* Profile Picture Styling */
 .profile-pic-container img {
-  max-width: 250px; /* Default size for larger screens */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 50%; /* Keeps the circular shape */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  animation: float 3s ease-in-out infinite; /* Floating animation */
+  max-width: 250px; 
+  height: auto; 
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  animation: float 3s ease-in-out infinite; 
 }
 
 /* Hide profile picture on small screens */
