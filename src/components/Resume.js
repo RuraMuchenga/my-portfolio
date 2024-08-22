@@ -1,7 +1,7 @@
 import React from 'react';
 import './Resume.css';
 
-const resumePDF = 'https://drive.google.com/uc?id=1FjBueM1OlxFqNv9IbQ8th4ZwsAjEad5W'; // Correct format for Google Drive
+const resumePDF = 'https://drive.google.com/uc?id=1FjBueM1OlxFqNv9IbQ8th4ZwsAjEad5W'; 
 
 const Resume = () => {
     return (

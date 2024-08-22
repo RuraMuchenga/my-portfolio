@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import profilePic from './images/profile.jpg'; // Adjust the path based on your structure
+import profilePic from './images/profile.jpg'; 
 
 function Home() {
     const scrollToBottom = () => {

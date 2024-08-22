@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar'; // Make sure Navbar is exported correctly
+import Navbar from './components/Navbar'; 
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
-import Resume from './components/Resume'; // Added Resume import
+import Resume from './components/Resume'; 
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -17,7 +17,7 @@ function App() {
       <Home />
       <About />
       <Projects />
-      <Resume /> {/* Added Resume component */}
+      <Resume />
       <Skills />
       <Contact />
       <Footer />

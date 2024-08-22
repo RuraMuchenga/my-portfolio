@@ -14,20 +14,20 @@
   }
   
   .intro-text h2 {
-    font-size: 28px; /* Slightly larger heading */
+    font-size: 28px; 
     font-family: 'Montserrat', sans-serif; 
     color: #004d40; 
     margin-bottom: 15px;
-    font-weight: 600; /* Bold for better visibility */
+    font-weight: 600; 
   }
   
   .intro-text p {
-    font-size: 20px; /* Larger font size for improved readability */
-    font-family: 'Open Sans', sans-serif; /* Clean and legible font */
-    color: #555; /* Slightly lighter gray for a softer look */
-    line-height: 1.8; /* Increased line height for readability */
+    font-size: 20px; 
+    font-family: 'Open Sans', sans-serif; 
+    color: #555; 
+    line-height: 1.8; 
     margin: 0 auto;
-    max-width: 700px; /* Constrain width for better readability */
+    max-width: 700px; 
   }
   
   .profile-pic-container {
@@ -35,34 +35,34 @@
   }
   
   .profile-pic-container img {
-    width: 220px; /* Slightly larger profile picture */
-    height: 220px; /* Maintain aspect ratio with fixed height */
-    border-radius: 50%; /* Circular profile picture */
-    border: 5px solid #004d40; /* Deep teal border for contrast */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
-    object-fit: cover; /* Ensures the image covers the container properly */
+    width: 220px; 
+    height: 220px; 
+    border-radius: 50%; 
+    border: 5px solid #004d40; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    object-fit: cover; 
   }
   
   .connect-button {
-    background-color: #00796b; /* Slightly lighter teal for a fresh look */
+    background-color: #00796b; 
     color: white;
     border: none;
-    border-radius: 30px; /* More rounded for a modern look */
+    border-radius: 30px;
     padding: 15px 30px;
-    font-size: 18px; /* Larger font size for better visibility */
-    font-family: 'Montserrat', sans-serif; /* Matching font for consistency */
+    font-size: 18px; 
+    font-family: 'Montserrat', sans-serif; 
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a floating effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   .connect-button:hover {
-    background-color: #004d40; /* Deep teal for hover effect */
-    transform: scale(1.1); /* Slight scaling for hover effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    background-color: #004d40;
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
   
   .connect-button:focus {

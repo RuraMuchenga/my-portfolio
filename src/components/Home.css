@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    background: #e0f4e1; /* Very light green background */
+    background: #e0f4e1; 
     color: #333;
     text-align: left;
     padding: 0 30px;
@@ -17,14 +17,14 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 5px solid #fff; /* Adds a white border around the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow to the image */
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
   #home h2 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #005b41; /* Darker green for contrast */
+    color: #005b41;
   }
   
   #home p {
