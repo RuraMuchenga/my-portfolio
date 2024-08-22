@@ -14,10 +14,10 @@ function Skills() {
                             <div className="skill-item">Python</div>
                             <div className="skill-item">Dart</div>
                             <div className="skill-item">TypeScript</div>
-                            <div className="skill-item">HTML</div>
-                            <div className="skill-item">CSS/SCSS</div>
+                            <div className="skill-item">HTML5</div>
+                            <div className="skill-item">CSS3/SCSS</div>
                             <div className="skill-item">NodeJS</div>
-                            <div className="skill-item">PHP</div>
+                            <div className="skill-item">Firebase</div>
                             <div className="skill-item">React</div>
                             <div className="skill-item">SQL</div>
                             <div className="skill-item">Matlab</div>
