@@ -1,10 +1,31 @@
-// src/components/Navbar.js
+import React, { useEffect, useState } from 'react';
 
-import React from 'react';
 
 function Navbar() {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);
+        };
+
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); 
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
+        handleResize(); 
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
-        <nav>
+        <nav className={`${isScrolled ? 'nav-faded' : ''} ${isMobile ? 'nav-hidden' : ''}`}>
             <div className="container">
                 <h1>Ruramai M.</h1>
                 <ul>
@@ -20,5 +41,6 @@ function Navbar() {
     );
 }
 
-export default Navbar; // Ensure this line is present
+export default Navbar;
+
 

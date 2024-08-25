@@ -40,7 +40,6 @@ section {
 
 
 
-/* Navbar.css */
 nav {
   background-color: #171a19; /* Darker green */
   color: white;
@@ -50,12 +49,16 @@ nav {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 2px -2px gray;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition for background color and opacity */
 }
 
-/* Navbar when scrolling */
 .nav-faded {
   background-color: rgba(23, 26, 25, 0.7); /* Faint color for the background */
+}
+
+/* Hides the navbar when the nav-hidden class is applied */
+.nav-hidden {
+  display: none;
 }
 
 nav .container {
@@ -91,8 +94,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color:  #494c4b;
+  color: #494c4b;
 }
+
 
 
 
