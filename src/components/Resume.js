@@ -35,6 +35,7 @@ const Resume = () => {
                         <li>Personal Portfolio Website</li>
                         <li>AirPiano Project</li>
                         <li>iFit Studio Project</li>
+                        <li>Customer Churn Prediction</li>
                         <li>Home Security system project</li>
                         <li>Used Matlab to simulate a communication system which
 takes an input sequence of bits entered from the keyboard

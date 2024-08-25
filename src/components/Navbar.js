@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the width as needed
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
 
     useEffect(() => {
         const handleScroll = () => {

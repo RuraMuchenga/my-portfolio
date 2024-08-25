@@ -37,23 +37,23 @@ section {
 
 
 
-
+/* navbar */
 
 
 nav {
-  background-color: #171a19; /* Darker green */
+  background-color: #171a19;
   color: white;
-  padding: 15px 20px; /* Added horizontal padding for better spacing */
+  padding: 15px 20px; 
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 2px -2px gray;
-  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition for background color and opacity */
+  transition: background-color 0.3s ease, opacity 0.3s ease; 
 }
 
 .nav-faded {
-  background-color: rgba(23, 26, 25, 0.7); /* Faint color for the background */
+  background-color: rgba(23, 26, 25, 0.7); 
 }
 
 /* Hides the navbar when the nav-hidden class is applied */
@@ -67,7 +67,7 @@ nav .container {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between; /* Distributes space between items */
+  justify-content: space-between; 
 }
 
 nav h1 {
@@ -81,7 +81,7 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 20px; /* Adjusted spacing between links */
+  gap: 20px; 
 }
 
 nav ul li {
@@ -91,7 +91,7 @@ nav ul li {
 nav ul li a {
   color: white;
   font-weight: bold;
-  text-decoration: none; /* Removes underline from links */
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
