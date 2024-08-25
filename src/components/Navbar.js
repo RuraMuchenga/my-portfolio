@@ -3,20 +3,21 @@ import React, { useEffect, useState } from 'react';
 
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjust the width as needed
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 0);
+            if (window.innerWidth <= 768) {
+                setIsScrolled(window.scrollY > 0);
+            }
         };
 
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768); 
+            setIsMobile(window.innerWidth <= 768);
         };
 
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
-        handleResize(); 
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -25,7 +26,7 @@ function Navbar() {
     }, []);
 
     return (
-        <nav className={`${isScrolled ? 'nav-faded' : ''} ${isMobile ? 'nav-hidden' : ''}`}>
+        <nav className={`${isScrolled && isMobile ? 'nav-hidden' : ''} ${isScrolled && !isMobile ? 'nav-faded' : ''}`}>
             <div className="container">
                 <h1>Ruramai M.</h1>
                 <ul>

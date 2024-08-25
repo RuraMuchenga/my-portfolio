@@ -58,7 +58,9 @@ nav {
 
 /* Hides the navbar when the nav-hidden class is applied */
 .nav-hidden {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 nav .container {
@@ -96,6 +98,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #494c4b;
 }
+
 
 
 
