@@ -1,7 +1,7 @@
 /* App.css */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #ffffff; /* White background */
   color: #000000; /* Black text color */
 }
@@ -36,24 +36,22 @@ section {
 
 
 
-
 /* navbar */
 
-
 nav {
-  background-color: #171a19;
-  color: white;
-  padding: 15px 20px; 
+  background-color: white;
+  color: black; /* Change the default text color to black */
+  padding: 15px 20px;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 2px -2px gray;
-  transition: background-color 0.3s ease, opacity 0.3s ease; 
+  box-shadow:white; /* Adds a subtle shadow for better visibility */
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .nav-faded {
-  background-color: rgba(23, 26, 25, 0.7); 
+  background-color: white;
 }
 
 /* Hides the navbar when the nav-hidden class is applied */
@@ -67,13 +65,13 @@ nav .container {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 nav h1 {
   margin: 0;
   font-size: 24px;
-  color: white;
+  color: black; /* Ensure the heading remains black */
 }
 
 nav ul {
@@ -81,7 +79,7 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 20px; 
+  gap: 20px;
 }
 
 nav ul li {
@@ -89,15 +87,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: black; /* Set links to black */
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #494c4b;
+  color: #494c4b; /* Darker gray on hover for better contrast */
 }
+
 
 
 
@@ -111,123 +110,100 @@ nav ul li a:hover {
 
 /* home.css */
 
-/* Keyframes for Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
 
-@keyframes bounceIn {
-  0% { transform: scale(0.8); opacity: 0; }
-  60% { transform: scale(1.05); opacity: 1; }
-  100% { transform: scale(1); }
-}
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
+
+
 
 /* Section Styling */
 #home {
   position: relative;
-  padding: 60px 20px;
-  text-align: left;
-  background: white; /* Gradient background for depth */
-  animation: fadeIn 2s ease-in-out;
+  padding: 40px 20px; /* Reduced padding at the top */
+  background: white; /* Softer, more neutral background */
+  min-height: 100vh; /* Fullscreen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: flex-start; /* Align items to the left */
+  box-sizing: border-box;
+}
+
+/* Container Styling */
+.container {
+  width: 100%;
 }
 
 /* Introductory Text Styling */
+.intro-text {
+  width: 100%;
+  color: #171a19 !important;
+  text-align: left;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
 .intro-text h2 {
-  font-size: 36px;
-  color:#171a19 !important;
-  margin-bottom: 20px;
+  font-size: 64px;
+  color:  #171a19 !important;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.1;
   animation: bounceIn 1.5s ease-out;
 }
 
 .intro-text p {
-  font-size: 21px !important ;
-  color: #555;
-  margin-bottom: 30px;
+  font-size: 22px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-weight: 400;
   animation: fadeIn 2s ease-in-out 0.5s;
 }
 
-/* Profile Picture Container */
-.profile-pic-container {
-  display: flex;
-  justify-content: center; 
-  padding: 20px; 
+/* Button Styling */
+.connect-button {
+  padding: 15px 35px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
 }
 
-/* Profile Picture Styling */
-.profile-pic-container img {
-  max-width: 250px; 
-  height: auto; 
-  border-radius: 50%; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  animation: float 3s ease-in-out infinite; 
+.connect-button:hover {
+  background-color: black;
+  transform: translateY(-3px);
 }
 
-/* Hide profile picture on small screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .profile-pic-container img {
-    display: none; /* Hides the image on smaller screens */
+  #home {
+    padding: 40px 10px; /* Further reduced padding on smaller screens */
+  }
+
+  .intro-text h2 {
+    font-size: 36px;
+    color: #000000 !important;
+  }
+
+  .intro-text p {
+    font-size: 18px;
+  }
+
+  .connect-button {
+    font-size: 16px;
+    padding: 12px 24px;
   }
 }
 
 
-/* Button Styling */
-.connect-button {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  padding: 12px 24px;
-  background: #171a19;
-  color: #ffffff;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: bounceIn 2s ease-out;
-}
 
-.connect-button::after {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid #ffffff;
-  margin-left: 8px;
-  transition: border-top-color 0.3s ease;
-}
 
-.connect-button:hover {
-  background:  #171a19;
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  filter: brightness(1.1);
-}
 
-.connect-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
-}
 
-.connect-button:active {
-  transform: translateY(-1px);
-  filter: brightness(1);
-}
 
 
 
