@@ -1,7 +1,7 @@
 import React from 'react';
 import './Resume.css';
 
-const resumePDF = 'https://drive.google.com/file/d/1LN8MaygTTGQTgb1wqG872JRhj035lDHT/view?usp=sharing'; 
+const resumePDF = 'https://drive.google.com/file/d/1HGQcRTL_CpF_dM6DgPyFcA_z1U0E2Mgm/view?usp=sharing'; 
 
 const Resume = () => {
     return (
@@ -37,6 +37,7 @@ const Resume = () => {
                         <li>iFit Studio Project</li>
                         <li>Customer Churn Prediction</li>
                         <li>Home Security system project</li>
+                        <li>Sentiment Analysis Tool Project</li>
                         <li>Used Matlab to simulate a communication system which
 takes an input sequence of bits entered from the keyboard
 performs vector encoding using 128QAM constellation.</li>

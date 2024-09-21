@@ -14,7 +14,7 @@ function Home() {
         <section id="home">
             <div className="intro-text">
                 <h2>Hello there! I'm Ruramai Muchenga👋.</h2>
-                <p>I am a junior Software Developer based in Dubai, UAE. As I approach the conclusion of my studies at Middlesex University Dubai, my enthusiasm for developing software solutions that tackle real-world issues continues to grow even more. Outside of my programming skills, I enjoy watching TV series like Suits and The Blacklist, captivated by their complex storylines and character arcs. Fitness is also a major part of my life; I’m dedicated to working out five times a week for at least an hour and a half each session. Additionally, I’m refining my chess skills with hopes of advancing to a more professional level.</p>
+                <p>I am a junior Software Developer based in Dubai, UAE. As I approach the conclusion of my studies at Middlesex University Dubai, my enthusiasm for developing software solutions that tackle real-world issues continues to grow. Beyond coding, I have a strong interest in streetwear and sneakers, always keeping an eye out for the latest drops and trends. Fitness is also a significant part of my life, and I’m dedicated to working out five times a week for at least an hour and a half per session. Additionally, I'm refining my chess skills with hopes of advancing to a more competitive level.</p>
             </div>
             <div className="profile-pic-container">
                 <img src={profilePic} alt="Profile" />
