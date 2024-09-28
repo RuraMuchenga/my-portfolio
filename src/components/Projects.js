@@ -4,7 +4,7 @@ function Projects() {
     return (
         <section id="projects">
             <div className="container">
-                <h2>Projects</h2>
+                <h2>Featured Projects</h2>
                 <div className="project-card">
                     <h3>AirPiano🎵</h3>
                     <p>In the “AirPiano” project, I embarked on a musical journey of creating a quirky air-based piano. The setup detects the distance of an object and translates it into musical notes, turning the surrounding space into a virtual piano. The result is a whimsical fusion of technology and music, where the air transforms into melodies with just a wave of a hand.</p>
