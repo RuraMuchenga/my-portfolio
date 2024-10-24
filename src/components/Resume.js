@@ -1,7 +1,7 @@
 import React from 'react';
 import './Resume.css';
 
-const resumePDF = 'https://drive.google.com/file/d/1ZmjiJQ0W8uzwOsFpPI1U_s0wjF2wA04P/view?usp=sharing'; 
+const resumePDF = 'https://drive.google.com/file/d/1CpsFCJIuVrHJFWBU3gBMYUgkasVvM5kR/view?usp=sharing'; 
 
 const Resume = () => {
     return (
