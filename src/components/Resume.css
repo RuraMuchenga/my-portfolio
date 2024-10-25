@@ -1,52 +1,87 @@
 #resume {
-    background-color: #f4f4f9; 
-    padding: 80px 20px;
-    text-align: center;
+    background-color: #ffffff;  /* Set background to white */
+    padding: 20px 0;
+    text-align: right important!; 
+    max-width: 1500px; /* Align everything to the left */
 }
 
 #resume h2 {
-    font-size: 34px;
-    color: #171a19; /* Deep Teal */
-    margin-bottom: 30px;
+    
+    font-size: 30px;
+    color: #171a19;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+   
+    
+   
 }
 
 .resume-content {
-    max-width: 900px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    position: relative;
+    padding: 0;
+    text-align: left;  /* Align content to the left */
 }
 
-.resume-link {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #171a19;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 40px;
-    font-size: 20px;
+.download-button {
+    padding: 2px 25px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    margin-bottom: 80px;
+    float: right;
 }
 
-.resume-link:hover {
-    background-color: #171a19;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.download-button:hover {
+    background-color: black;
+  transform: translateY(-3px);
+}
+
+.download-button span {
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+.experience .job {
+    margin-bottom: 30px;
+}
+
+.job-details {
+    display: block;  /* Stack title and location vertically */
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.job-details h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #171a19;
+    margin-bottom: 4px;  /* Ensure spacing between title and location */
+}
+
+.job-location {
+    font-size: 16px;
+    color: #666;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 .education, .skills, .projects {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
-    text-align: left;
     margin-bottom: 30px;
+    text-align: left;  /* Explicitly align all sections to the left */
 }
 
 .education h3, .skills h3, .projects h3 {
@@ -55,12 +90,14 @@
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    text-align: left;
 }
 
 .education ul, .skills ul, .projects ul {
     list-style-type: disc;
     margin: 0;
-    padding-left: 30px;
+    padding-left: 20px;  /* Smaller padding to align lists */
+    text-align: left;
 }
 
 .education li, .skills li, .projects li {
@@ -69,3 +106,6 @@
     color: #555;
     line-height: 1.8;
 }
+
+
+
